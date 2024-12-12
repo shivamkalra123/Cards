@@ -57,9 +57,9 @@
   right: 10px;
   font-size: 24px;
   color: white;
-  display: none; /* Initially hidden */
+  display: none;
 }
 
 .card.expanded:hover .arrow {
-  display: block; /* Show the arrow when card is expanded and hovered */
+  display: block;
 }
