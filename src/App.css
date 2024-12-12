@@ -1,0 +1,53 @@
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  position: relative;
+  width: 800px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  transition: flex 0.3s ease-in-out;
+  margin: 0 -40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 200px;
+  height: 300px;
+}
+
+.card.expanded {
+  flex: 2;
+  z-index: 2;
+}
+
+.card:not(.expanded) {
+  flex: 1;
+  opacity: 0.8;
+}
+
+.card .header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
